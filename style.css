@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+:root {
+    --orange:#ff9814;
+}
+* {
+    font-family: 'Open Sans', sans-ser;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+*::selection {
+    background: var(--orange);
+    color: #fff;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.btn{
+    font-size: 2rem;
+    padding: .7rem 3rem;
+    background: aqua;
+    border-radius: 1rem;
+    color: #fff;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #333;
+}
+section{
+    padding: 0 7%;
+    padding-top: 15rem;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    width: 100%;
+}
+header .heading {
+    font-size: 3rem;
+    color: #666;
+    padding: 1rem;
+    text-align: center;
+}
+header #menu {
+    font-size: 3rem;
+    color: #666;
+    cursor: pointer;
+    margin: 1rem;
+    display: none;
+
+}
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background: var(--orange);
+    padding: 1rem;
+}
+header .navbar ul li {
+    margin: 0 1.5rem;
+}
+header .navbar ul li img{
+    height: 50%;
+}
+header .navbar ul li a {
+    font-size: 2rem;
+    color: #fff;
+}
+header .navbar ul li a:hover {
+    color: #444;
+}
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url(bookk.avif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+.h1{
+    color: #4070f4;
+}
+.parthi{
+  width: 50px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+.parthi:hover{
+    width: 300px;
+    height: 300px;
+}
+.home .image{
+    flex: 1 1 40rem;
+}
+.home .image{
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 40rem;
+}
+.home .content h1{
+    font-size: 5rem;
+    color: red;
+}
+.home .content h1 span{
+    color: #ff9814;
+}
+.home .content p{
+    font-size: 1.8rem;
+    color: #444;
+    padding: 1rem;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 80%;
+    }
+  }
+/*form*/
+.box1 {
+    text-align: center;
+    background: url(board.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.3);
+    box-shadow: 2px 2px 15px rgba(0,0,0,.3);
+    color: black;
+    text-rendering: auto;
+}
+.box1 input {
+    text-align: justify;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: justify;
+    padding: 4px;
+}
+.course .box1 .register label {
+    text-align: center;
+}
+.box1 h2{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+#register label{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    
+}
+span #male #female {
+    font-size: 13px;
+}
+
+.button {
+    margin-top: 10px;
+    
+}
+.button a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 8px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.button a.yellow {
+    color: #fff;
+    background-color: #fdc93b;
+    transition: 0.3s ease;
+}
+.button a.yellow:hover {
+    color: white;
+    background-color: green;
+}
+/*form end*/
+/*table*/
+.table{
+    padding-top: 200px;
+}
+  .content-table {
+    justify-content: center;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    margin: 25px 0;
+    column-gap: 50px;
+    font-size: 18px;
+    border-spacing: 10px;
+    margin-left: 230px;
+    min-width: 600px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,.15);
+
+}
+.table-title h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content-table thead tr {
+    text-align: center;
+    align-items: center;
+    background-color: #009879;
+    color: #ffff;
+}
+.content-table th td {
+    text-align: center;
+    padding: 12px 15px;
+    column-gap: 12px;
+}
+.content-table tbody tr {
+    text-align: center;
+    border-bottom: 10px solid #ddd;
+    border-right: 8px solid #ddd;
+}
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type {
+    border-bottom: 3px solid #009879;
+}
+.content-table tbody tr .active-row {
+    font-weight: bold;
+    color: #009879;
+}
+input button {
+    background: #6c5ce7;
+    color: #fdc93b;
+    text-align: left;
+    font-weight: bold;
+}
+.payment .box1 {
+    text-align: center;
+}
+.payment .box1 h1 {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+.payment .box1 .btn {
+    color: black;
+    font-size: 11px;
+    background: greenyellow;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/*table end*/
+/*pay*/
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding-top: 150px;
+    margin: 0 15px;
+    margin-left: 50px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+.container header {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+.container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #4070f4;
+}
+.container form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 290px;
+    background-color: #fff;
+}
+.container form .details{
+    margin-top: 30px;
+}
+.container form .details .ID {
+    margin-top: 10px;
+}
+.container form .details .personal {
+    margin-top: 10px;
+}
+.container form .title {
+    display: block;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+.container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+.input-field  label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #3e3e3e;
+}
+.input-field  input {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field  input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0,0,0,.1);
+}
+.input-field  input[type="date"] {
+    color: #707070;
+}
+.input-field  input[type="date"]:valid {
+    color: #333;
+}
+.container form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    background-color: #4070f4;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    padding: 15px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: green;
+}
+form .buttons {
+    display: flex;
+    align-items: center;
+}
+form .buttons button .nextBtn {
+    margin-right: 15px;
+}
+form .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    background-color: #4070f4;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    padding: 15px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin-right: 15px;
+}
+form .atri a {
+    color: blue;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+/*pay end*/
+/*footer*/
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.footer .box-container .box {
+    flex: 1 1 20rem;
+}
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: red;
+}
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: .7rem 0;
+}
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    color: #666;
+    padding: .7rem 0;
+}
+.footer .box-container .box i {
+    color: blue;
+}
+
+.footer .box-container .box5 a {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.footer .box-container .box5 i {
+    color: red;
+    font-size: 40px;
+}
+.footer .box-container .box5 i:hover {
+    color: purple;
+}
+.footer .box-container .box a:hover {
+    color: peru;
+}
+.footer .box-container .box p i:hover {
+    padding-right: 1.5rem;
+    font-size: 15px;
+}
+.footer .credit {
+    font-size: 18px;
+    margin-top: 1rem;
+    padding: 1rem;
+    align-content: center;
+    padding-top: 2rem;
+    text-align: center;
+    border-top: 10px solid rgba(0,0,0,.1);
+    color: #666;
+}
+.footer .credit span {
+    color: #6c5ce7;
+}
+/*footer end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    html {
+        font-size: 55%;
+    }
+    .home .content{
+        text-align: center;
+    }
+    .home .content h1{
+        font-size: 4rem;
+    }
+
+    @media(max-width:500px){
+        html {
+            font-size: 50%;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1rem;
+        }
+        header #menu {
+            display: block;
+        }
+        header .navbar{
+            position: fixed;
+            top: 6.2rem;
+            right: -120%;
+            height: 100%;
+            width: 100%;
+            border-top: .2rem solid rgba(0,0,0,.3);
+        }
+        header .navbar ul{
+            height: 100%;
+            width: 100%;
+            flex-flow: column;
+            background: #fff;
+            padding-bottom: 15rem;
+
+        }
+        header .navbar ul li{
+            text-align: center;
+            width: 100%;
+            margin: 1rem 0;
+        }
+        header .navbar ul li a{
+            font-size: 4rem;
+            color: #333;
+            display: block;
+        }
+        header .navbar ul li a:hover{
+            color: var(--orange);
+        }
+        .fa-times{
+            transform: rotate(180deg);
+        }
+        header .navbar .nav-toggle{
+            right: 0;
+
+        }
+        section{
+            padding-top: 5rem;
+        }
+        .course .box1{
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .table{
+            border-collapse: collapse;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            font-size: 12px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+
+    
+    }
+}

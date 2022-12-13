@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+</head>
+<body>
+    <header>
+       
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index1.html">Application</a></li>
+                <li><a href="index2.html">Fees Details</a></li>
+                <li><a href="index3.html">Payent</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--home-->
+    <section class="home">
+        <div class="content">
+        <h1>Parthi College of Arts <span> & science</span></h1>
+        <br>
+        <p>Parthi College of Arts & Science was established<br>
+            by Shri.T. Parthiban,<br>
+            Founder - Chairman of Parthiban Charitable and Educational Trust, Perambalur.<br>
+            The trust was registered on 18th January 1994 under the Tamilnadu Societies Act</p>
+            <br>
+            <hr>
+            <h1 class="h1">Founder of the college</h1>
+                <img class="parthi" src="photo.jpg" alt="">
+            <br>
+            <hr>
+            <video height="310" width="430" autoplay controls poster="no1.jpg">
+                <source src="result.mp4" type="video/mp4">
+            </video>
+            <br>
+            <a href="index1.html"><button class="btn">Get Application</button></a>
+        </div>
+            <img id="myImg" src="college.jpg" alt="Snow" style="width:100%;max-width:300px">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+              </div>
+    </section>
+    <br>
+    <!--home end-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>One of the best college in perambalur</p>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">home</a>
+                <a href="index1.html">Application</a>
+                <a href="index2.html">Fees</a>
+                <a href="index3.html">Pay</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">linkedin</a>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <p><i class="fas fa-phone"></i>04328277690</p>
+                <p><i class="fas fa-envelope"></i>parthiedu@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i>perambalur, tamilnadu - 621212</p>
+            <div class="box5">
+                <p><i class='bx bxs-up-arrow-square'></i><a href="#Top">Top</a></p>
+            </div>
+            </div>
+        </div>
+        <div class="credit">created by <span>mr.parthi</span>| all right reserved</div>
+    </section>
+    <!--footer end-->
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+    
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
